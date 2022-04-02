@@ -1,3 +1,0 @@
-C:/BuildXL/BuildXL/Examples/CMakeHelloWorld/Out/Example/CMakeFiles/Example.dir
-C:/BuildXL/BuildXL/Examples/CMakeHelloWorld/Out/Example/CMakeFiles/edit_cache.dir
-C:/BuildXL/BuildXL/Examples/CMakeHelloWorld/Out/Example/CMakeFiles/rebuild_cache.dir
