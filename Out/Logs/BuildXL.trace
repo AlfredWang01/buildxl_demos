@@ -1,0 +1,8 @@
+{"traceEvents": [
+{"name": "Start", "ph": "i", "ts": 4820000, "s": "g"},
+{"name": "CPU", "ph": "C", "pid": "#0 (Local) - Counters", "ts": 45095000, "args": {"%": "100"}},
+{"name": "CPU", "ph": "C", "pid": "#0 (Local) - Counters", "ts": 45095000, "args": {"%": "0"}},
+{"name": "RAM", "ph": "C", "pid": "#0 (Local) - Counters", "ts": 45095000, "args": {"%": "100"}},
+{"name": "RAM", "ph": "C", "pid": "#0 (Local) - Counters", "ts": 45095000, "args": {"%": "0"}},
+{"name": "Stop", "ph": "i", "ts": 56701000, "s": "g"},
+{}]}

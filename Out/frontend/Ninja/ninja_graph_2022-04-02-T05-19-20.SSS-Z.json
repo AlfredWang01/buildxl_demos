@@ -1,0 +1,63 @@
+{
+  "Graph": {
+    "Nodes": [
+      {
+        "$id": "1",
+        "rule": "CXX_COMPILER__Example_Debug",
+        "command": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx86\\x86\\cl.exe\"  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\Example.dir\\main.cc.obj /FdCMakeFiles\\Example.dir\\ /FS -c C:\\BuildXL\\BuildXL\\Examples\\CMakeHelloWorld\\main.cc",
+        "dependencies": [
+
+        ],
+        "inputs": [
+          "C:/BuildXL/BuildXL/Examples/CMakeHelloWorld/main.cc",
+          "CMakeFiles/Example.dir"
+        ],
+        "outputs": [
+          "CMakeFiles/Example.dir/main.cc.obj"
+        ]
+      },
+      {
+        "$id": "2",
+        "rule": "CXX_EXECUTABLE_LINKER__Example_Debug",
+        "command": "cmd.exe /C \"cd . && \"C:\\Program Files\\CMake\\bin\\cmake.exe\" -E vs_link_exe --intdir=CMakeFiles\\Example.dir --rc=\"C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22000.0\\x86\\rc.exe\" --mt=\"C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.22000.0\\x86\\mt.exe\" --manifests  -- \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx86\\x86\\link.exe\" /nologo CMakeFiles\\Example.dir\\main.cc.obj  /out:Example.exe /implib:Example.lib /pdb:Example.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd .\"",
+        "dependencies": [
+          {
+            "$ref": "1"
+          }
+        ],
+        "inputs": [
+          "CMakeFiles/Example.dir/main.cc.obj"
+        ],
+        "outputs": [
+          "Example.exe"
+        ]
+      },
+      {
+        "$id": "3",
+        "rule": "phony",
+        "command": "",
+        "dependencies": [
+          {
+            "$ref": "2"
+          }
+        ],
+        "inputs": [
+          "Example.exe"
+        ],
+        "outputs": [
+
+        ]
+      }
+    ],
+    "Targets": [
+      {
+        "name": "all",
+        "producer_node": {
+          "$ref": "3"
+        }
+      }
+    ]
+  },
+  "FailureReason": ""
+}
+
