@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>BuildXL.Tools.Ninjson</id>
+    <version>0.0.6</version>
+    <authors>BuildXL</authors>
+    <owners>BuildXL</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://dev.azure.com/mseng/Domino/_git/Ninjson</projectUrl>
+    <description>Tool to serialize Ninja specs to JSON</description>
+    <releaseNotes>0.0.6: Run the tool before ninja depfile loading</releaseNotes>
+  </metadata>
+</package>

@@ -1,0 +1,63 @@
+{
+  "Graph": {
+    "Nodes": [
+      {
+        "$id": "1",
+        "rule": "CXX_COMPILER__Example_Debug",
+        "command": "C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\cl.exe  /nologo /TP  -I\"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\shared\" -I\"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\ucrt\" -I\"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\um\" -I\"C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\winrt\" -I\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\include\" /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\Example.dir\\main.cc.obj /FdCMakeFiles\\Example.dir\\ /FS -c C:\\dev\\CMake_Demos\\buildxl_demos\\NinjaHelloWorld\\main.cc",
+        "dependencies": [
+
+        ],
+        "inputs": [
+          "C:/dev/CMake_Demos/buildxl_demos/NinjaHelloWorld/main.cc",
+          "CMakeFiles/Example.dir"
+        ],
+        "outputs": [
+          "CMakeFiles/Example.dir/main.cc.obj"
+        ]
+      },
+      {
+        "$id": "2",
+        "rule": "CXX_EXECUTABLE_LINKER__Example_Debug",
+        "command": "cmd.exe /C \"cd . && \"C:\\Program Files\\CMake\\bin\\cmake.exe\" -E vs_link_exe --intdir=CMakeFiles\\Example.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100220~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100220~1.0\\x86\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx86\\x86\\link.exe /nologo CMakeFiles\\Example.dir\\main.cc.obj  /out:Example.exe /implib:Example.lib /pdb:Example.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console -LIBPATH:C:\\PROGRA~2\\WI3CF2~1\\10\\Lib\\100162~1.0\\um\\x86   -LIBPATH:C:\\PROGRA~2\\MICROS~3\\2019\\ENTERP~1\\VC\\Tools\\MSVC\\1429~1.301\\lib\\x86   -LIBPATH:C:\\PROGRA~2\\WI3CF2~1\\10\\Lib\\100162~1.0\\ucrt\\x86 kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd .\"",
+        "dependencies": [
+          {
+            "$ref": "1"
+          }
+        ],
+        "inputs": [
+          "CMakeFiles/Example.dir/main.cc.obj"
+        ],
+        "outputs": [
+          "Example.exe"
+        ]
+      },
+      {
+        "$id": "3",
+        "rule": "phony",
+        "command": "",
+        "dependencies": [
+          {
+            "$ref": "2"
+          }
+        ],
+        "inputs": [
+          "Example.exe"
+        ],
+        "outputs": [
+
+        ]
+      }
+    ],
+    "Targets": [
+      {
+        "name": "all",
+        "producer_node": {
+          "$ref": "3"
+        }
+      }
+    ]
+  },
+  "FailureReason": ""
+}
+

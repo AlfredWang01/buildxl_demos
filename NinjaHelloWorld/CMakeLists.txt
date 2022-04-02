@@ -1,0 +1,8 @@
+cmake_minimum_required (VERSION 3.0)
+set(PROJECT_NAME Example)
+set(PROJ_LINK_FLAGS /MACHINE:X64)
+project (${PROJECT_NAME})
+include_directories("C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/shared" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/ucrt" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/um" "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/winrt" "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/include")
+link_directories("C:/Program Files (x86)/Windows Kits/10/Lib/10.0.16299.0/um/x86" "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/lib/x86" "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.16299.0/ucrt/x86")
+set_target_properties(${project} PROPERTIES LINK_FLAGS ${PROJ_LINK_FLAGS})
+add_executable(${PROJECT_NAME} main.cc)

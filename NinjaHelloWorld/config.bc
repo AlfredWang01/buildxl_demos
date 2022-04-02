@@ -1,0 +1,23 @@
+config({
+    resolvers: [
+        {
+            kind: "Ninja",
+            targets: ["all"],
+            root: d`.`,
+            moduleName: "Project",
+            environment: Map.empty<string, (PassthroughEnvironmentVariable | string)>(),
+        }
+    ],
+
+    mounts: [
+        {
+            name: a`Project Root`,
+            path: p`./build`,
+            trackSourceFileChanges: true,
+            isWritable: true,
+            isReadable: true,
+        },
+    ],
+
+    disableInBoxSdkSourceResolver: true,
+});

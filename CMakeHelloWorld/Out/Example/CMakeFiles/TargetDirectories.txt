@@ -1,0 +1,3 @@
+C:/dev/CMake_Demos/buildxl_demos/CMakeHelloWorld/Out/Example/CMakeFiles/Example.dir
+C:/dev/CMake_Demos/buildxl_demos/CMakeHelloWorld/Out/Example/CMakeFiles/edit_cache.dir
+C:/dev/CMake_Demos/buildxl_demos/CMakeHelloWorld/Out/Example/CMakeFiles/rebuild_cache.dir

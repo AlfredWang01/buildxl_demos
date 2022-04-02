@@ -1,0 +1,191 @@
+{ "operationStacks": [
+{ "id":"PipExecutorCounter.OperationTrackerActive"                                                         , "duration":"9,387", "occurrences":" 1", "displayAvgDuration":"00:00:09.3872456"},
+{ "id":"PipExecutorCounter.PipRunningState"                                                                , "duration":"9,115", "occurrences":"27", "displayAvgDuration":"00:00:00.3376118", "c":[
+  { "id":"PipExecutorCounter.ExecutePipStep.Process"                                                       , "duration":"8,935", "occurrences":"18", "displayAvgDuration":"00:00:00.4963941", "c":[
+    { "id":"PipExecutionStep.ExecuteProcess.Process"                                                       , "duration":"8,732", "occurrences":" 2", "displayAvgDuration":"00:00:04.3663630", "c":[
+      { "id":"Worker #0 (Local)"                                                                           , "duration":"8,727", "occurrences":" 2", "displayAvgDuration":"00:00:04.3635830", "c":[
+        { "id":"PipExecutorCounter.ProcessPossibleRetryWallClock"                                          , "duration":"8,565", "occurrences":" 2", "displayAvgDuration":"00:00:04.2826594"},
+        { "id":"PipExecutorCounter.ProcessOutputs"                                                         , "duration":"  145", "occurrences":" 2", "displayAvgDuration":"00:00:00.0729299", "c":[
+          { "id":"PipExecutorCounter.ProcessOutputsStoreContentForProcessAndCreateCacheEntry"              , "duration":"   90", "occurrences":" 2", "displayAvgDuration":"00:00:00.0452215", "c":[
+            { "id":"PipExecutorCounter.SerializeAndStorePipOutput"                                         , "duration":"   37", "occurrences":" 8", "displayAvgDuration":"00:00:00.0046360"},
+            { "id":"PipExecutorCounter.SerializeAndStorePipMetadata"                                       , "duration":"   18", "occurrences":" 2", "displayAvgDuration":"00:00:00.0093641"},
+            { "id":"PipExecutorCounter.ComputeStrongFingerprint"                                           , "duration":"    1", "occurrences":" 2", "displayAvgDuration":"00:00:00.0005121"}]},
+          { "id":"PipExecutorCounter.ProcessOutputsObservedInputValidation"                                , "duration":"   51", "occurrences":" 2", "displayAvgDuration":"00:00:00.0259171", "c":[
+            { "id":"PipExecutorCounter.ObservedInputProcessorProcessInternal"                              , "duration":"   42", "occurrences":" 2", "displayAvgDuration":"00:00:00.0213107", "c":[
+              { "id":"PipExecutorCounter.ObservedInputProcessorPass2ProcessObservationInfos"               , "duration":"   36", "occurrences":" 2", "displayAvgDuration":"00:00:00.0184464", "c":[
+                { "id":"PipExecutorCounter.ObservedInputProcessorTryQueryDirectoryFingerprint"             , "duration":"   28", "occurrences":" 1", "displayAvgDuration":"00:00:00.0287699"},
+                { "id":"PipExecutorCounter.ObservedInputProcessorTryProbeForExistence"                     , "duration":"    3", "occurrences":"19", "displayAvgDuration":"00:00:00.0001659"},
+                { "id":"PipExecutorCounter.ObservedInputProcessorComputeSearchPathsAndFilter"              , "duration":"    2", "occurrences":" 2", "displayAvgDuration":"00:00:00.0011203"},
+                { "id":"PipExecutorCounter.ObservedInputProcessorTryQuerySealedInputContent"               , "duration":"    0", "occurrences":"19", "displayAvgDuration":"00:00:00.0000062"}]},
+              { "id":"PipExecutorCounter.ObservedInputProcessorPass1InitializeObservationInfos"            , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0003810"},
+              { "id":"PipExecutorCounter.ObservedInputProcessorPreProcess"                                 , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000562", "c":[
+                { "id":"PipExecutorCounter.ObservedInputProcessorPreProcessValidateSealSource"             , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000527"},
+                { "id":"PipExecutorCounter.ObservedInputProcessorPreProcessListDirectories"                , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000006"}]}]}]}]},
+        { "id":"PipExecutorCounter.RunServiceDependencies"                                                 , "duration":"    1", "occurrences":" 2", "displayAvgDuration":"00:00:00.0006628"},
+        { "id":"PipExecutorCounter.AcquireResources"                                                       , "duration":"    1", "occurrences":" 2", "displayAvgDuration":"00:00:00.0005530"}]}]},
+    { "id":"PipExecutionStep.CacheLookup.Process"                                                          , "duration":"   60", "occurrences":" 2", "displayAvgDuration":"00:00:00.0303317", "c":[
+      { "id":"Worker #0 (Local)"                                                                           , "duration":"   57", "occurrences":" 2", "displayAvgDuration":"00:00:00.0288526", "c":[
+        { "id":"PipExecutorCounter.CheckProcessRunnableFromCache"                                          , "duration":"   52", "occurrences":" 2", "displayAvgDuration":"00:00:00.0263249", "c":[
+          { "id":"PipExecutorCounter.CheckProcessRunnableFromCacheChapter1DetermineStrongFingerprint"      , "duration":"   32", "occurrences":" 2", "displayAvgDuration":"00:00:00.0162408", "c":[
+            { "id":"PipExecutorCounter.CacheQueryingWeakFingerprint"                                       , "duration":"   31", "occurrences":" 8", "displayAvgDuration":"00:00:00.0039493"}]},
+          { "id":"PipExecutorCounter.ComputeWeakFingerprint"                                               , "duration":"   10", "occurrences":" 2", "displayAvgDuration":"00:00:00.0051665"},
+          { "id":"PipExecutorCounter.CheckProcessRunnableFromCacheChapter2RetrieveCacheEntry"              , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0001776"}]},
+        { "id":"PipExecutorCounter.CheckProcessRunnableFromCacheExecutionLog"                              , "duration":"    2", "occurrences":" 2", "displayAvgDuration":"00:00:00.0010848"}]},
+      { "id":"PipExecutorCounter.ReportRemoteMetadataAndPathSet"                                           , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000004"}]},
+    { "id":"PipExecutionStep.PostProcess.Process"                                                          , "duration":"   56", "occurrences":" 2", "displayAvgDuration":"00:00:00.0283014", "c":[
+      { "id":"PipExecutorCounter.AnalyzeFileAccessViolations"                                              , "duration":"   21", "occurrences":" 2", "displayAvgDuration":"00:00:00.0105217"},
+      { "id":"Worker #0 (Local)"                                                                           , "duration":"    3", "occurrences":" 2", "displayAvgDuration":"00:00:00.0019891", "c":[
+        { "id":"PipExecutorCounter.StoreProcessToCacheDurationMs"                                          , "duration":"    3", "occurrences":" 2", "displayAvgDuration":"00:00:00.0015657"}]}]},
+    { "id":"PipExecutionStep.Start.Process"                                                                , "duration":"   41", "occurrences":" 2", "displayAvgDuration":"00:00:00.0207976", "c":[
+      { "id":"PipExecutorCounter.HashSourceFileDependencies"                                               , "duration":"   40", "occurrences":" 2", "displayAvgDuration":"00:00:00.0204175", "c":[
+        { "id":"PipExecutorCounter.FileContentManagerGetAndRecordFileContentHash"                          , "duration":"   23", "occurrences":" 3", "displayAvgDuration":"00:00:00.0077648"}]}]},
+    { "id":"PipExecutionStep.ChooseWorkerCpu.Process"                                                      , "duration":"   13", "occurrences":" 2", "displayAvgDuration":"00:00:00.0069074"},
+    { "id":"PipExecutionStep.HandleResult.Process"                                                         , "duration":"   12", "occurrences":" 2", "displayAvgDuration":"00:00:00.0062781", "c":[
+      { "id":"PipExecutorCounter.OnPipCompleted"                                                           , "duration":"   12", "occurrences":" 2", "displayAvgDuration":"00:00:00.0062649", "c":[
+        { "id":"PipExecutorCounter.ScheduleDependents"                                                     , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000751", "c":[
+          { "id":"PipExecutorCounter.ScheduleDependent.Process"                                            , "duration":"    0", "occurrences":" 3", "displayAvgDuration":"00:00:00.0000261", "c":[
+            { "id":"PipExecutorCounter.ScheduledByDependency.SealDirectory"                                , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000250"},
+            { "id":"PipExecutorCounter.ScheduledByDependency.Process"                                      , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0000216"}]}]}]}]},
+    { "id":"PipExecutionStep.MaterializeInputs.Process"                                                    , "duration":"   11", "occurrences":" 2", "displayAvgDuration":"00:00:00.0056442", "c":[
+      { "id":"Worker #0 (Local)"                                                                           , "duration":"   10", "occurrences":" 2", "displayAvgDuration":"00:00:00.0053098", "c":[
+        { "id":"PipExecutorCounter.FileContentManagerDeleteDirectories"                                    , "duration":"    1", "occurrences":" 2", "displayAvgDuration":"00:00:00.0007352"},
+        { "id":"PipExecutorCounter.FileContentManagerPlaceFilesInputs"                                     , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0001145"}]}]},
+    { "id":"PipExecutionStep.ChooseWorkerCacheLookup.Process"                                              , "duration":"    3", "occurrences":" 2", "displayAvgDuration":"00:00:00.0018648"},
+    { "id":"PipExecutionStep.CheckIncrementalSkip.Process"                                                 , "duration":"    2", "occurrences":" 2", "displayAvgDuration":"00:00:00.0010304", "c":[
+      { "id":"PipExecutorCounter.FileContentManagerEnumerateOutputDirectoryHashArtifacts"                  , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0002575"}]}]},
+  { "id":"PipExecutorCounter.ExecutePipStep.SpecFile"                                                      , "duration":"  153", "occurrences":"60", "displayAvgDuration":"00:00:00.0025663", "c":[
+    { "id":"PipExecutionStep.HandleResult.SpecFile"                                                        , "duration":"   56", "occurrences":"20", "displayAvgDuration":"00:00:00.0028273", "c":[
+      { "id":"PipExecutorCounter.OnPipCompleted"                                                           , "duration":"   25", "occurrences":"20", "displayAvgDuration":"00:00:00.0012693", "c":[
+        { "id":"PipExecutorCounter.ScheduleDependents"                                                     , "duration":"   15", "occurrences":"20", "displayAvgDuration":"00:00:00.0007519", "c":[
+          { "id":"PipExecutorCounter.ScheduleDependent.SpecFile"                                           , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0001720", "c":[
+            { "id":"PipExecutorCounter.ScheduledByDependency.Module"                                       , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0001701"}]}]}]}]},
+    { "id":"PipExecutionStep.ExecuteNonProcessPip.SpecFile"                                                , "duration":"   28", "occurrences":"20", "displayAvgDuration":"00:00:00.0014481"},
+    { "id":"PipExecutionStep.Start.SpecFile"                                                               , "duration":"   11", "occurrences":"20", "displayAvgDuration":"00:00:00.0005568"}]},
+  { "id":"PipExecutorCounter.ExecutePipStep.SealDirectory"                                                 , "duration":"    6", "occurrences":"10", "displayAvgDuration":"00:00:00.0006556", "c":[
+    { "id":"PipExecutionStep.MaterializeOutputs.SealDirectory"                                             , "duration":"    5", "occurrences":" 2", "displayAvgDuration":"00:00:00.0025469", "c":[
+      { "id":"Worker #0 (Local)"                                                                           , "duration":"    4", "occurrences":" 2", "displayAvgDuration":"00:00:00.0022406", "c":[
+        { "id":"PipExecutorCounter.FileContentManagerDeleteDirectories"                                    , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000500"},
+        { "id":"PipExecutorCounter.FileContentManagerEnumerateOutputDirectoryMaterializeOutputs"           , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000101"},
+        { "id":"PipExecutorCounter.FileContentManagerPlaceFilesOutputs"                                    , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000043"}]}]},
+    { "id":"PipExecutionStep.HandleResult.SealDirectory"                                                   , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0003397", "c":[
+      { "id":"PipExecutorCounter.OnPipCompleted"                                                           , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0003161", "c":[
+        { "id":"PipExecutorCounter.ScheduleDependents"                                                     , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0002651", "c":[
+          { "id":"PipExecutorCounter.ScheduleDependent.SealDirectory"                                      , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0005117", "c":[
+            { "id":"PipExecutorCounter.ScheduledByDependency.Value"                                        , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0005088"}]}]}]}]},
+    { "id":"PipExecutionStep.ExecuteNonProcessPip.SealDirectory"                                           , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0003193", "c":[
+      { "id":"PipExecutorCounter.RegisterStaticDirectory"                                                  , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0001177"}]},
+    { "id":"PipExecutionStep.Start.SealDirectory"                                                          , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000561", "c":[
+      { "id":"PipExecutorCounter.HashSourceFileDependencies"                                               , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000372"}]},
+    { "id":"PipExecutionStep.CheckIncrementalSkip.SealDirectory"                                           , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000038"}]},
+  { "id":"PipExecutorCounter.ExecutePipStep.Value"                                                         , "duration":"    0", "occurrences":" 3", "displayAvgDuration":"00:00:00.0001384", "c":[
+    { "id":"PipExecutionStep.HandleResult.Value"                                                           , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0003780", "c":[
+      { "id":"PipExecutorCounter.OnPipCompleted"                                                           , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0003494", "c":[
+        { "id":"PipExecutorCounter.ScheduleDependents"                                                     , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0003397", "c":[
+          { "id":"PipExecutorCounter.ScheduleDependent.Value"                                              , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0003232", "c":[
+            { "id":"PipExecutorCounter.ScheduledByDependency.SpecFile"                                     , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0003204"}]}]}]}]},
+    { "id":"PipExecutionStep.Start.Value"                                                                  , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0000169"},
+    { "id":"PipExecutionStep.ExecuteNonProcessPip.Value"                                                   , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0000098"}]},
+  { "id":"PipExecutorCounter.ExecutePipStep.Module"                                                        , "duration":"    0", "occurrences":" 6", "displayAvgDuration":"00:00:00.0000185", "c":[
+    { "id":"PipExecutionStep.HandleResult.Module"                                                          , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000250", "c":[
+      { "id":"PipExecutorCounter.OnPipCompleted"                                                           , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000102", "c":[
+        { "id":"PipExecutorCounter.ScheduleDependents"                                                     , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000040"}]}]},
+    { "id":"PipExecutionStep.Start.Module"                                                                 , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000151"},
+    { "id":"PipExecutionStep.ExecuteNonProcessPip.Module"                                                  , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000096"}]}]}
+],
+
+
+
+"operationStacksWithTopOps": [
+{ "id":"PipExecutorCounter.OperationTrackerActive"                                                         , "duration":"9,387", "occurrences":" 1", "displayAvgDuration":"00:00:09.3872456"},
+{ "id":"PipExecutorCounter.PipRunningState"                                                                , "duration":"9,115", "occurrences":"27", "displayAvgDuration":"00:00:00.3376118", "c":[
+  { "id":"PipExecutorCounter.ExecutePipStep.Process"                                                       , "duration":"8,935", "occurrences":"18", "displayAvgDuration":"00:00:00.4963941", "c":[
+    { "id":"PipExecutionStep.ExecuteProcess.Process"                                                       , "duration":"8,732", "occurrences":" 2", "displayAvgDuration":"00:00:04.3663630", "c":[
+      { "id":"Worker #0 (Local)"                                                                           , "duration":"8,727", "occurrences":" 2", "displayAvgDuration":"00:00:04.3635830", "c":[
+        { "id":"PipExecutorCounter.ProcessPossibleRetryWallClock"                                          , "duration":"8,565", "occurrences":" 2", "displayAvgDuration":"00:00:04.2826594"},
+        { "id":"PipExecutorCounter.ProcessOutputs"                                                         , "duration":"  145", "occurrences":" 2", "displayAvgDuration":"00:00:00.0729299", "c":[
+          { "id":"PipExecutorCounter.ProcessOutputsStoreContentForProcessAndCreateCacheEntry"              , "duration":"   90", "occurrences":" 2", "displayAvgDuration":"00:00:00.0452215", "c":[
+            { "id":"PipExecutorCounter.SerializeAndStorePipOutput"                                         , "duration":"   37", "occurrences":" 8", "displayAvgDuration":"00:00:00.0046360"},
+            { "id":"PipExecutorCounter.SerializeAndStorePipMetadata"                                       , "duration":"   18", "occurrences":" 2", "displayAvgDuration":"00:00:00.0093641"},
+            { "id":"PipExecutorCounter.ComputeStrongFingerprint"                                           , "duration":"    1", "occurrences":" 2", "displayAvgDuration":"00:00:00.0005121"}]},
+          { "id":"PipExecutorCounter.ProcessOutputsObservedInputValidation"                                , "duration":"   51", "occurrences":" 2", "displayAvgDuration":"00:00:00.0259171", "c":[
+            { "id":"PipExecutorCounter.ObservedInputProcessorProcessInternal"                              , "duration":"   42", "occurrences":" 2", "displayAvgDuration":"00:00:00.0213107", "c":[
+              { "id":"PipExecutorCounter.ObservedInputProcessorPass2ProcessObservationInfos"               , "duration":"   36", "occurrences":" 2", "displayAvgDuration":"00:00:00.0184464", "c":[
+                { "id":"PipExecutorCounter.ObservedInputProcessorTryQueryDirectoryFingerprint"             , "duration":"   28", "occurrences":" 1", "displayAvgDuration":"00:00:00.0287699"},
+                { "id":"PipExecutorCounter.ObservedInputProcessorTryProbeForExistence"                     , "duration":"    3", "occurrences":"19", "displayAvgDuration":"00:00:00.0001659"},
+                { "id":"PipExecutorCounter.ObservedInputProcessorComputeSearchPathsAndFilter"              , "duration":"    2", "occurrences":" 2", "displayAvgDuration":"00:00:00.0011203"},
+                { "id":"PipExecutorCounter.ObservedInputProcessorTryQuerySealedInputContent"               , "duration":"    0", "occurrences":"19", "displayAvgDuration":"00:00:00.0000062"}]},
+              { "id":"PipExecutorCounter.ObservedInputProcessorPass1InitializeObservationInfos"            , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0003810"},
+              { "id":"PipExecutorCounter.ObservedInputProcessorPreProcess"                                 , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000562", "c":[
+                { "id":"PipExecutorCounter.ObservedInputProcessorPreProcessValidateSealSource"             , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000527"},
+                { "id":"PipExecutorCounter.ObservedInputProcessorPreProcessListDirectories"                , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000006"}]}]}]}]},
+        { "id":"PipExecutorCounter.RunServiceDependencies"                                                 , "duration":"    1", "occurrences":" 2", "displayAvgDuration":"00:00:00.0006628"},
+        { "id":"PipExecutorCounter.AcquireResources"                                                       , "duration":"    1", "occurrences":" 2", "displayAvgDuration":"00:00:00.0005530"}]}]},
+    { "id":"PipExecutionStep.CacheLookup.Process"                                                          , "duration":"   60", "occurrences":" 2", "displayAvgDuration":"00:00:00.0303317", "c":[
+      { "id":"Worker #0 (Local)"                                                                           , "duration":"   57", "occurrences":" 2", "displayAvgDuration":"00:00:00.0288526", "c":[
+        { "id":"PipExecutorCounter.CheckProcessRunnableFromCache"                                          , "duration":"   52", "occurrences":" 2", "displayAvgDuration":"00:00:00.0263249", "c":[
+          { "id":"PipExecutorCounter.CheckProcessRunnableFromCacheChapter1DetermineStrongFingerprint"      , "duration":"   32", "occurrences":" 2", "displayAvgDuration":"00:00:00.0162408", "c":[
+            { "id":"PipExecutorCounter.CacheQueryingWeakFingerprint"                                       , "duration":"   31", "occurrences":" 8", "displayAvgDuration":"00:00:00.0039493"}]},
+          { "id":"PipExecutorCounter.ComputeWeakFingerprint"                                               , "duration":"   10", "occurrences":" 2", "displayAvgDuration":"00:00:00.0051665"},
+          { "id":"PipExecutorCounter.CheckProcessRunnableFromCacheChapter2RetrieveCacheEntry"              , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0001776"}]},
+        { "id":"PipExecutorCounter.CheckProcessRunnableFromCacheExecutionLog"                              , "duration":"    2", "occurrences":" 2", "displayAvgDuration":"00:00:00.0010848"}]},
+      { "id":"PipExecutorCounter.ReportRemoteMetadataAndPathSet"                                           , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000004"}]},
+    { "id":"PipExecutionStep.PostProcess.Process"                                                          , "duration":"   56", "occurrences":" 2", "displayAvgDuration":"00:00:00.0283014", "c":[
+      { "id":"PipExecutorCounter.AnalyzeFileAccessViolations"                                              , "duration":"   21", "occurrences":" 2", "displayAvgDuration":"00:00:00.0105217"},
+      { "id":"Worker #0 (Local)"                                                                           , "duration":"    3", "occurrences":" 2", "displayAvgDuration":"00:00:00.0019891", "c":[
+        { "id":"PipExecutorCounter.StoreProcessToCacheDurationMs"                                          , "duration":"    3", "occurrences":" 2", "displayAvgDuration":"00:00:00.0015657"}]}]},
+    { "id":"PipExecutionStep.Start.Process"                                                                , "duration":"   41", "occurrences":" 2", "displayAvgDuration":"00:00:00.0207976", "c":[
+      { "id":"PipExecutorCounter.HashSourceFileDependencies"                                               , "duration":"   40", "occurrences":" 2", "displayAvgDuration":"00:00:00.0204175", "c":[
+        { "id":"PipExecutorCounter.FileContentManagerGetAndRecordFileContentHash"                          , "duration":"   23", "occurrences":" 3", "displayAvgDuration":"00:00:00.0077648"}]}]},
+    { "id":"PipExecutionStep.ChooseWorkerCpu.Process"                                                      , "duration":"   13", "occurrences":" 2", "displayAvgDuration":"00:00:00.0069074"},
+    { "id":"PipExecutionStep.HandleResult.Process"                                                         , "duration":"   12", "occurrences":" 2", "displayAvgDuration":"00:00:00.0062781", "c":[
+      { "id":"PipExecutorCounter.OnPipCompleted"                                                           , "duration":"   12", "occurrences":" 2", "displayAvgDuration":"00:00:00.0062649", "c":[
+        { "id":"PipExecutorCounter.ScheduleDependents"                                                     , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000751", "c":[
+          { "id":"PipExecutorCounter.ScheduleDependent.Process"                                            , "duration":"    0", "occurrences":" 3", "displayAvgDuration":"00:00:00.0000261", "c":[
+            { "id":"PipExecutorCounter.ScheduledByDependency.SealDirectory"                                , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000250"},
+            { "id":"PipExecutorCounter.ScheduledByDependency.Process"                                      , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0000216"}]}]}]}]},
+    { "id":"PipExecutionStep.MaterializeInputs.Process"                                                    , "duration":"   11", "occurrences":" 2", "displayAvgDuration":"00:00:00.0056442", "c":[
+      { "id":"Worker #0 (Local)"                                                                           , "duration":"   10", "occurrences":" 2", "displayAvgDuration":"00:00:00.0053098", "c":[
+        { "id":"PipExecutorCounter.FileContentManagerDeleteDirectories"                                    , "duration":"    1", "occurrences":" 2", "displayAvgDuration":"00:00:00.0007352"},
+        { "id":"PipExecutorCounter.FileContentManagerPlaceFilesInputs"                                     , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0001145"}]}]},
+    { "id":"PipExecutionStep.ChooseWorkerCacheLookup.Process"                                              , "duration":"    3", "occurrences":" 2", "displayAvgDuration":"00:00:00.0018648"},
+    { "id":"PipExecutionStep.CheckIncrementalSkip.Process"                                                 , "duration":"    2", "occurrences":" 2", "displayAvgDuration":"00:00:00.0010304", "c":[
+      { "id":"PipExecutorCounter.FileContentManagerEnumerateOutputDirectoryHashArtifacts"                  , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0002575"}]}]},
+  { "id":"PipExecutorCounter.ExecutePipStep.SpecFile"                                                      , "duration":"  153", "occurrences":"60", "displayAvgDuration":"00:00:00.0025663", "c":[
+    { "id":"PipExecutionStep.HandleResult.SpecFile"                                                        , "duration":"   56", "occurrences":"20", "displayAvgDuration":"00:00:00.0028273", "c":[
+      { "id":"PipExecutorCounter.OnPipCompleted"                                                           , "duration":"   25", "occurrences":"20", "displayAvgDuration":"00:00:00.0012693", "c":[
+        { "id":"PipExecutorCounter.ScheduleDependents"                                                     , "duration":"   15", "occurrences":"20", "displayAvgDuration":"00:00:00.0007519", "c":[
+          { "id":"PipExecutorCounter.ScheduleDependent.SpecFile"                                           , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0001720", "c":[
+            { "id":"PipExecutorCounter.ScheduledByDependency.Module"                                       , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0001701"}]}]}]}]},
+    { "id":"PipExecutionStep.ExecuteNonProcessPip.SpecFile"                                                , "duration":"   28", "occurrences":"20", "displayAvgDuration":"00:00:00.0014481"},
+    { "id":"PipExecutionStep.Start.SpecFile"                                                               , "duration":"   11", "occurrences":"20", "displayAvgDuration":"00:00:00.0005568"}]},
+  { "id":"PipExecutorCounter.ExecutePipStep.SealDirectory"                                                 , "duration":"    6", "occurrences":"10", "displayAvgDuration":"00:00:00.0006556", "c":[
+    { "id":"PipExecutionStep.MaterializeOutputs.SealDirectory"                                             , "duration":"    5", "occurrences":" 2", "displayAvgDuration":"00:00:00.0025469", "c":[
+      { "id":"Worker #0 (Local)"                                                                           , "duration":"    4", "occurrences":" 2", "displayAvgDuration":"00:00:00.0022406", "c":[
+        { "id":"PipExecutorCounter.FileContentManagerDeleteDirectories"                                    , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000500"},
+        { "id":"PipExecutorCounter.FileContentManagerEnumerateOutputDirectoryMaterializeOutputs"           , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000101"},
+        { "id":"PipExecutorCounter.FileContentManagerPlaceFilesOutputs"                                    , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000043"}]}]},
+    { "id":"PipExecutionStep.HandleResult.SealDirectory"                                                   , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0003397", "c":[
+      { "id":"PipExecutorCounter.OnPipCompleted"                                                           , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0003161", "c":[
+        { "id":"PipExecutorCounter.ScheduleDependents"                                                     , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0002651", "c":[
+          { "id":"PipExecutorCounter.ScheduleDependent.SealDirectory"                                      , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0005117", "c":[
+            { "id":"PipExecutorCounter.ScheduledByDependency.Value"                                        , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0005088"}]}]}]}]},
+    { "id":"PipExecutionStep.ExecuteNonProcessPip.SealDirectory"                                           , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0003193", "c":[
+      { "id":"PipExecutorCounter.RegisterStaticDirectory"                                                  , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0001177"}]},
+    { "id":"PipExecutionStep.Start.SealDirectory"                                                          , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000561", "c":[
+      { "id":"PipExecutorCounter.HashSourceFileDependencies"                                               , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000372"}]},
+    { "id":"PipExecutionStep.CheckIncrementalSkip.SealDirectory"                                           , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000038"}]},
+  { "id":"PipExecutorCounter.ExecutePipStep.Value"                                                         , "duration":"    0", "occurrences":" 3", "displayAvgDuration":"00:00:00.0001384", "c":[
+    { "id":"PipExecutionStep.HandleResult.Value"                                                           , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0003780", "c":[
+      { "id":"PipExecutorCounter.OnPipCompleted"                                                           , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0003494", "c":[
+        { "id":"PipExecutorCounter.ScheduleDependents"                                                     , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0003397", "c":[
+          { "id":"PipExecutorCounter.ScheduleDependent.Value"                                              , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0003232", "c":[
+            { "id":"PipExecutorCounter.ScheduledByDependency.SpecFile"                                     , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0003204"}]}]}]}]},
+    { "id":"PipExecutionStep.Start.Value"                                                                  , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0000169"},
+    { "id":"PipExecutionStep.ExecuteNonProcessPip.Value"                                                   , "duration":"    0", "occurrences":" 1", "displayAvgDuration":"00:00:00.0000098"}]},
+  { "id":"PipExecutorCounter.ExecutePipStep.Module"                                                        , "duration":"    0", "occurrences":" 6", "displayAvgDuration":"00:00:00.0000185", "c":[
+    { "id":"PipExecutionStep.HandleResult.Module"                                                          , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000250", "c":[
+      { "id":"PipExecutorCounter.OnPipCompleted"                                                           , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000102", "c":[
+        { "id":"PipExecutorCounter.ScheduleDependents"                                                     , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000040"}]}]},
+    { "id":"PipExecutionStep.Start.Module"                                                                 , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000151"},
+    { "id":"PipExecutionStep.ExecuteNonProcessPip.Module"                                                  , "duration":"    0", "occurrences":" 2", "displayAvgDuration":"00:00:00.0000096"}]}]}
+] }
